@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Fix typos and unclear sentences in the Session 1 notes",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nThe Session 1 notes may contain typos or sentences that a first-year student finds confusing.\n\n## Context\nBeginners judge the whole repo by Session 1.\n\n## Expected outcome\nA clearer `sessions/session-01/README.md` and `lesson.py` comments.\n\n## Relevant files\n`sessions/session-01/README.md`, `sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] At least three improvements\n- [ ] `python start.py test` still passes\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add a failed-payment path to the Session 1 sequence diagram",
+    "labels": [
+      "good first issue",
+      "beginner"
+    ],
+    "body": "## Problem\nThe sequence diagram only shows a successful payment.\n\n## Context\nSession 1 mentions that a payment above the balance is declined but never draws it.\n\n## Expected outcome\nA second picture in which the payer bank answers 'declined' at step 3 and the later steps are replaced by a failure message to the apps.\n\n## Relevant files\n`sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] A new PNG saved in `out/`\n- [ ] Ledger numbers beside every arrow\n- [ ] Checkpoint still passes\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add Session 4: reconcile three ledgers",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe roadmap's first milestone does not exist yet.\n\n## Context\nSee `promo/roadmap.md`. The toy switch has one ledger; real systems compare separate ledgers at the end of the day.\n\n## Expected outcome\n`sessions/session-04/` with README (sections A to F), lesson, checkpoint, exercises and app in the same style as Sessions 1 to 3.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] Checkpoint prints PASS and the roadmap checkpoint is met\n- [ ] Added to the tests\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Add a daily limit to the toy switch (the mini-project)",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe shipped `Switch` has no daily limit, so `rapid_fire_test` drains Rs 36000 in 40 payments.\n\n## Context\nSee the mini-project text in PROJECT.md. A daily limit caps the damage when fraud rules miss.\n\n## Expected outcome\nA `daily_limit` option that refuses a payment taking the day's total above the limit, with the reason `daily limit` in the log.\n\n## Relevant files\n`sessions/session-03/lesson.py`, `PROJECT.md`\n\n## Acceptance criteria\n- [ ] With a limit of 5000, at most 5 of the 40 payments succeed and at most Rs 4500 leaves the account\n- [ ] Ordinary payments on another day still pass\n- [ ] All four invariants hold\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Reproduce the Target: slow-attack detection with few false alarms",
+    "labels": [
+      "advanced",
+      "feature"
+    ],
+    "body": "## Problem\nThe Target animation shows a switch that holds suspicious payments, and the shipped rules miss 19 of 20 slow attacks. There is no public implementation of a better detector.\n\n## Context\nThe code behind the Target is private on purpose. The roadmap gives the path; use only the synthetic data from Session 3.\n\n## Expected outcome\nYour own scoring function and a write-up of how it works.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] At least 16 of 20 slow attacks flagged\n- [ ] False positive rate at most 5 percent on the seeded data\n- [ ] Short write-up of your method\n\n## Difficulty\nadvanced"
+  },
+  {
+    "title": "Translate the Session 1 notes into Hindi",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Hindi cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.hi.md` with a faithful Hindi translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Telugu",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Telugu cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.te.md` with a faithful Telugu translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Tamil",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Tamil cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ta.md` with a faithful Tamil translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Malayalam",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Malayalam cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ma.md` with a faithful Malayalam translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  }
+]
